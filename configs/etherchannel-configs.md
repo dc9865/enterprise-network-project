@@ -1,39 +1,35 @@
-
----
-```markdown
-# VLAN Design
+# EtherChannel Design
 
 ## Overview
 
-The network is segmented into multiple VLANs to separate traffic types and improve security and scalability.
+EtherChannel is used to provide redundancy and increased bandwidth between distribution switches.
 
 ---
 
-## Office A VLANs
+## Office A
 
-| VLAN ID | Name        | Purpose        |
-|---------|-------------|----------------|
-| 10      | PCs         | User devices   |
-| 20      | Phones      | VoIP traffic   |
-| 40      | WiFi        | Wireless users |
-| 99      | Management  | Device mgmt    |
+- Protocol: **PAgP (Cisco Proprietary)**
+- Mode: Desirable
 
----
-
-## Office B VLANs
-
-| VLAN ID | Name        | Purpose        |
-|---------|-------------|----------------|
-| 10      | PCs         | User devices   |
-| 20      | Phones      | VoIP traffic   |
-| 30      | Servers     | Internal apps  |
-| 99      | Management  | Device mgmt    |
+### Purpose
+- Demonstrates Cisco-specific implementation
+- Provides redundancy between DSW-A1 and DSW-A2
 
 ---
 
-## Key Design Decisions
+## Office B
 
-- Separate VLAN for voice traffic → enables QoS later
-- Management VLAN isolated for security
-- Server VLAN isolated to reduce broadcast traffic
-- VLAN consistency maintained across trunk links
+- Protocol: **LACP (IEEE 802.3ad)**
+- Mode: Active
+
+### Purpose
+- Industry-standard EtherChannel protocol
+- Ensures interoperability
+
+---
+
+## Benefits
+
+- Load balancing across links
+- Redundancy (link failure does not disrupt traffic)
+- Simplified management (logical interface)
