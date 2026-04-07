@@ -49,7 +49,3 @@ Verifies Layer 3 reachability.
 
 
 ---
-
-## Conclusion
-
-Layer 3 addressing and connectivity are functioning correctly across the network.
