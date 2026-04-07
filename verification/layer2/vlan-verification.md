@@ -19,7 +19,8 @@ Verify VLAN creation, assignment, and trunk propagation.
 ### 🔹 VLAN Table (show vlan brief)
 Verifies VLAN creation and access port assignment.
 
-<img src="https://github.com/user-attachments/assets/14753164-1527-45d9-99a2-b9321d7a27c1" width="700">
+<img width="653" height="340" alt="image" src="https://github.com/user-attachments/assets/1a9c34a6-c426-43e8-b9f7-46284c1110ad" />
+
 
 ---
 
