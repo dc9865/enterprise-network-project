@@ -34,3 +34,9 @@ The network is segmented into multiple VLANs to separate traffic types and impro
 - Management VLAN isolated for security
 - Server VLAN isolated to reduce broadcast traffic
 - VLAN consistency maintained across trunk links
+
+## Why This Design
+
+- Reduces broadcast domains
+- Improves security boundaries
+- Enables easier policy control (ACLs later)
