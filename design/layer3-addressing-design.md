@@ -1,4 +1,4 @@
-# Layer 3 Addressing Design (Part 3 – Tasks 1–11)
+# Layer 3 Addressing Design
 
 ## Objective
 Introduce Layer 3 connectivity across the enterprise topology using routed interfaces, loopbacks, and management addressing.
