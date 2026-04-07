@@ -1,56 +1,130 @@
 # CCNA Mega Lab – Enterprise Network Simulation
 
-This project is a full-scale enterprise network lab based on Jeremy’s IT Lab CCNA Mega Lab. It simulates a multi-site enterprise network with redundancy and scalable design.
+This project is a full-scale enterprise network simulation based on Jeremy’s IT Lab Mega Lab.  
+It models a **multi-site enterprise architecture** with redundant Layer 2/Layer 3 design, segmentation, and high availability mechanisms.
+
+The goal of this project is not only to implement configurations, but to **demonstrate real-world network design, validation, and troubleshooting practices**.
 
 ---
 
-## 📌 Phase 1 – Initial Device Configuration
+## 🏗️ Project Overview
 
-This phase establishes baseline configurations across all routers and switches to ensure secure and consistent device management.
-
-### 🔧 Tasks Performed
-
-- Configured hostnames on all routers and switches
-- Secured privileged EXEC mode using encrypted enable secrets
-- Created local user accounts for authentication
-- Enabled console login using local credentials
-- Configured console session timeout (30 minutes)
-- Enabled synchronous logging for better CLI usability
-
-### 💡 Purpose
-
-- Enforces secure access to network devices
-- Standardizes device configuration across the environment
-- Prepares devices for remote management and future configurations
+- Multi-site topology (Office A / Office B)
+- Hierarchical design:
+  - Core Layer (CSW1 / CSW2)
+  - Distribution Layer (DSW-A / DSW-B)
+  - Access Layer (ASW)
+- Redundant links across all layers
+- Wireless + wired client integration
 
 ---
 
-## 📌 Phase 2 – VLANs & Layer 2 EtherChannel
+## 🌐 Topology
 
-This phase focuses on network segmentation and link redundancy using VLANs, trunking, and EtherChannel.
+![Network Topology](topology/topology.png)
 
-### 🔧 Tasks Performed
-
-- Configured Layer 2 EtherChannel:
-  - **Office A:** PAgP (Cisco proprietary)
-  - **Office B:** LACP (IEEE standard)
-- Configured trunk links across Distribution switches
-- Disabled DTP and manually set trunking
-- Implemented VLAN segmentation across both offices
-- Configured VTP domain (`JeremysITLab`)
-- Assigned access ports for:
-  - PCs
-  - Phones (voice VLAN)
-  - Servers
-- Configured trunks to support required VLANs
-- Disabled unused ports for security
-
-### 💡 Purpose
-
-- Provides network segmentation (Users, Voice, Servers, Management)
-- Ensures redundancy with EtherChannel
-- Reduces broadcast domains
-- Prepares network for inter-VLAN routing (next phase)
+> Includes dual-core design, redundant distribution switches, EtherChannel links, and segmented VLAN architecture.
 
 ---
 
+## 🚀 Key Features Implemented
+
+- VLAN segmentation for traffic isolation
+- Trunking for inter-switch VLAN propagation
+- EtherChannel (PAgP + LACP) for redundancy and load balancing
+- VTP for centralized VLAN management
+- Inter-VLAN routing (later phases)
+- First-hop redundancy using HSRP (later phases)
+- Rapid Spanning Tree Protocol (RSTP) for loop prevention
+- Layer 2 security (port shutdown, DTP disabled)
+
+---
+
+## 🧠 What I Implemented
+
+Instead of following step-by-step instructions, the network was configured with the following design goals:
+
+- Segmented user, voice, server, and management traffic using VLANs
+- Built redundant uplinks using EtherChannel to eliminate single points of failure
+- Standardized trunk configurations across all inter-switch links
+- Implemented VTP to ensure VLAN consistency across distribution and access layers
+- Applied secure baseline configurations across all network devices
+- Disabled unused interfaces to reduce attack surface
+
+---
+
+# 📌 Phase 1 – Device Baseline Configuration
+
+## Objective
+Establish a secure and consistent configuration baseline across all routers and switches.
+
+## Implementation
+
+- Hostnames assigned based on topology roles
+- Encrypted enable secret configured
+- Local authentication database created
+- Console access secured using local login
+- Idle timeout enforced (30 minutes)
+- CLI usability improved using synchronous logging
+
+## Why This Matters
+
+This ensures:
+- Controlled administrative access
+- Consistent device behavior across the network
+- Readiness for future remote management (SSH, AAA)
+
+---
+
+# 📌 Phase 2 – VLAN Segmentation & EtherChannel
+
+## Objective
+Design a scalable Layer 2 network with segmentation and redundancy.
+
+## Implementation
+
+### VLAN Design
+
+| VLAN | Purpose        |
+|------|--------------|
+| 10   | User Devices |
+| 20   | Voice        |
+| 30   | Servers (Office B) |
+| 40   | Wireless     |
+| 99   | Management   |
+
+### Key Configurations
+
+- VLANs created and propagated using VTP (Domain: `JeremysITLab`)
+- Access ports assigned per device type (PC, Phone, AP, Server)
+- Voice VLAN configured for IP phones
+- Trunk links manually configured (`switchport mode trunk`)
+- DTP disabled on all trunk links
+
+### EtherChannel Design
+
+| Location | Protocol | Purpose |
+|----------|--------|--------|
+| Office A | PAgP   | Cisco-specific redundancy |
+| Office B | LACP   | Industry-standard redundancy |
+
+- Distribution switches connected via Port-Channel
+- Load balancing + failover achieved
+
+## Why This Matters
+
+- Reduces broadcast domains → improves performance
+- Provides redundancy → prevents outages
+- Enables scalable network growth
+
+---
+
+# 📌 Validation (CRITICAL)
+
+The network was validated using standard operational commands:
+
+```bash
+show vlan brief
+show interfaces trunk
+show etherchannel summary
+show mac address-table
