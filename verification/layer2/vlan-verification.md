@@ -16,9 +16,17 @@ Verify VLAN creation, assignment, and trunk propagation.
 
 ## Sample Output
 
-1. <img width="678" height="253" alt="image" src="https://github.com/user-attachments/assets/14753164-1527-45d9-99a2-b9321d7a27c1" /><br><br><br><br>
+### 🔹 VLAN Table (show vlan brief)
+Verifies VLAN creation and access port assignment.
 
-2. <img width="592" height="289" alt="image" src="https://github.com/user-attachments/assets/b5b840e9-8edc-4910-8226-da2e33dcc0ce" />
+<img src="https://github.com/user-attachments/assets/14753164-1527-45d9-99a2-b9321d7a27c1" width="700">
+
+---
+
+### 🔹 Trunk Status (show interfaces trunk)
+Verifies VLAN propagation across trunk links.
+
+<img src="https://github.com/user-attachments/assets/b5b840e9-8edc-4910-8226-da2e33dcc0ce" width="700">
 
 ## Conclusion
 
