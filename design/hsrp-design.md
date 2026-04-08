@@ -1,4 +1,4 @@
-# HSRP Design (Part 3 – Tasks 12–19)
+# HSRP Design
 
 ## Objective
 Provide default gateway redundancy for all VLANs across Office A and Office B. 
