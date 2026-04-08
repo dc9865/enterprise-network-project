@@ -1,4 +1,4 @@
-# DNS Design (Part 6 – Tasks 3–4)
+# DNS Design
 
 ## Objective
 Provide centralized name resolution for network devices and clients.
