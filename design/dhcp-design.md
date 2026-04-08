@@ -1,4 +1,4 @@
-# DHCP Design (Part 6 – Tasks 1–2)
+# DHCP Design
 
 ## Objective
 Provide centralized IP address assignment for all VLANs across both offices.
