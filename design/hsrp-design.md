@@ -2,7 +2,7 @@
 
 ## Objective
 Provide default gateway redundancy for all VLANs across Office A and Office B. 
-This phase introduces first-hop redundancy only.  
+This phase introduces first-hop redundancy.
 
 ---
 
