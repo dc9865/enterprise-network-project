@@ -137,12 +137,10 @@ SRV1 was manually configured:
 
 ---
 
-## Design Principles Applied
+## Design Principles
 
 - Routed access between layers (Layer 3 boundaries)
 - Redundancy via EtherChannel
 - Minimal subnet sizing (/30)
 - Separation of management plane (VLAN 99)
 - Use of loopbacks for stability
-
----
