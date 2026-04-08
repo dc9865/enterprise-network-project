@@ -1,60 +1,60 @@
-\# Layer 3 Addressing Verification
+# Layer 3 Addressing Verification
 
 
 
-\## Objective
+## Objective
 
 Verify Layer 3 interfaces, EtherChannel, loopbacks, and management IPs.
 
 
 
-\---
+---
 
 
 
-\## Commands Used
+## Commands Used
 
 
 
-\- show ip interface brief
+- show ip interface brief
 
-\- show etherchannel summary
+- show etherchannel summary
 
-\- show ip route
-
-
-
-\---
+- show ip route
 
 
 
-\## Key Observations
+---
 
 
 
-\- Port-Channel1 is up/up on CSW1 and CSW2
-
-\- G1/0/2–3 correctly bundled into EtherChannel
-
-\- Routed interfaces between core and distribution are up
-
-\- Loopback interfaces present on all L3 devices
-
-\- VLAN 99 SVI configured on all access switches
-
-\- R1 interfaces received IPs and are operational
+## Key Observations
 
 
 
-\---
+- Port-Channel1 is up/up on CSW1 and CSW2
+
+- G1/0/2–3 correctly bundled into EtherChannel
+
+- Routed interfaces between core and distribution are up
+
+- Loopback interfaces present on all L3 devices
+
+- VLAN 99 SVI configured on all access switches
+
+- R1 interfaces received IPs and are operational
 
 
 
-\## Sample Output
+---
 
 
 
-\### 🔹 Interface Status (show ip interface brief)
+## Sample Output
+
+
+
+### 🔹 Interface Status (show ip interface brief)
 
 Verifies all Layer 3 interfaces and loopbacks are up.
 
@@ -66,11 +66,11 @@ Verifies all Layer 3 interfaces and loopbacks are up.
 
 
 
-\---
+---
 
 
 
-\### 🔹 EtherChannel Status (show etherchannel summary)
+### 🔹 EtherChannel Status (show etherchannel summary)
 
 Verifies Port-Channel1 and member interfaces.
 
@@ -82,11 +82,11 @@ Verifies Port-Channel1 and member interfaces.
 
 
 
-\---
+---
 
 
 
-\### 🔹 Routing Table (show ip route)
+### 🔹 Routing Table (show ip route)
 
 Verifies Layer 3 reachability.
 
@@ -98,7 +98,7 @@ Verifies Layer 3 reachability.
 
 
 
-\---
+---
 
 
 
