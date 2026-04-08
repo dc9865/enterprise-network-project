@@ -1,4 +1,4 @@
-# RSTP Design (Part 4)
+# RSTP Design
 
 ## Objective
 Provide loop prevention, fast convergence, and predictable Layer 2 forwarding.
