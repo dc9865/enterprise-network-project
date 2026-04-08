@@ -1,4 +1,4 @@
-# OSPF Design (Part 5)
+# OSPF Design
 
 ## Objective
 Enable dynamic routing across all Layer 3 devices and provide full network reachability. 
