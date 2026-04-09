@@ -39,3 +39,10 @@ Verifies root bridge per VLAN.
 Verifies port roles and states.
 
 <img width="603" height="270" alt="image" src="https://github.com/user-attachments/assets/a506c5a3-6a88-438a-937e-41be222e8850" />
+
+
+---
+
+## Conclusion
+
+RSTP is functioning correctly with proper root placement and edge protection.
