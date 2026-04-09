@@ -42,3 +42,7 @@ Verifies leased addresses.
 
 
 ---
+
+## Conclusion
+
+DHCP services are functioning correctly across all VLANs.
