@@ -29,6 +29,9 @@ Verifies VLAN propagation across trunk links.
 
 <img src="https://github.com/user-attachments/assets/b5b840e9-8edc-4910-8226-da2e33dcc0ce" width="700">
 
+
+---
+
 ## Conclusion
 
 VLAN segmentation is functioning correctly across the network.
