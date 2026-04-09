@@ -10,7 +10,7 @@ Verify WLC configuration, AP association, and WLAN status.
 - WLC GUI access (https://10.0.0.7)
 - WLAN status page
 - AP join status
-- Client association (if applicable)
+- Client association
 
 ---
 
@@ -47,7 +47,14 @@ Verifies LWAP association with WLC.
 
 <img width="1555" height="333" alt="image" src="https://github.com/user-attachments/assets/89d4111a-fbf4-40fe-9efd-35d55b6a2279" />
 
+
 ---
+
+### 🔹 Client Association
+Verifies Client association with LWAP/WLC.
+
+<img width="749" height="112" alt="image" src="https://github.com/user-attachments/assets/971eea51-10df-456c-a0be-bcbdb17c4dea" />
+
 
 ## Conclusion
 
