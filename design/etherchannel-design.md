@@ -1,35 +1,51 @@
 # EtherChannel Design
 
-## Overview
+## Objective
+Provide link redundancy and increased bandwidth between distribution switches.
 
-EtherChannel is used to provide redundancy and increased bandwidth between distribution switches.
+---
+
+## Architecture
+
+- Layer 2 EtherChannel configured between distribution switches
+- Port-Channel1 used in both Office A and Office B
 
 ---
 
 ## Office A
 
-- Protocol: **PAgP (Cisco Proprietary)**
-- Mode: Desirable
-
-### Purpose
-- Demonstrates Cisco-specific implementation
-- Provides redundancy between DSW-A1 and DSW-A2
+- Devices: DSW-A1 ↔ DSW-A2
+- Protocol: PAgP (Cisco proprietary)
+- Mode: desirable (active negotiation)
 
 ---
 
 ## Office B
 
-- Protocol: **LACP (IEEE 802.3ad)**
-- Mode: Active
-
-### Purpose
-- Industry-standard EtherChannel protocol
-- Ensures interoperability
+- Devices: DSW-B1 ↔ DSW-B2
+- Protocol: LACP (open standard)
+- Mode: active
 
 ---
 
-## Benefits
+## Configuration Summary
 
-- Load balancing across links
-- Redundancy (link failure does not disrupt traffic)
-- Simplified management (logical interface)
+- Multiple physical links bundled into Port-Channel1
+- Operates as a single logical interface
+- Trunk configuration applied to Port-Channel interface
+
+---
+
+## Design Principles
+
+- Eliminates single link failure
+- Provides load balancing across links
+- Ensures loop-free topology with STP
+- Uses protocol diversity (PAgP vs LACP)
+
+---
+
+## Notes
+
+- PAgP used in Office A for Cisco-specific implementation  
+- LACP used in Office B for standards-based interoperability
