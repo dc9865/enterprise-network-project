@@ -36,3 +36,9 @@ Verifies maximum MAC count, sticky learning, and violation mode.
 
 <img width="390" height="180" alt="image" src="https://github.com/user-attachments/assets/a0fcce13-a746-4bad-baaf-aa5ae973c540" />
 
+
+---
+
+## Conclusion
+
+Port security is functioning correctly.
