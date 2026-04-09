@@ -38,3 +38,11 @@ Verifies adjacency formation.
 Verifies OSPF routes and default route.
 
 <img width="663" height="351" alt="image" src="https://github.com/user-attachments/assets/d50af676-ad97-4e4e-9047-80282f58910e" />
+
+
+---
+
+## Conclusion
+
+OSPF is functioning correctly with full route exchange and stable neighbor relationships.
+
