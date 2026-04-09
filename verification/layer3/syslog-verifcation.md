@@ -24,7 +24,8 @@ Verify log forwarding and buffering.
 ### 🔹 Logging Status (show logging)
 Verifies remote syslog server and local buffer settings.
 
-<img width="575" height="446" alt="image" src="https://github.com/user-attachments/assets/ddb41d45-4e4e-447c-9a9f-5620f6359626" />
+<img width="662" height="468" alt="image" src="https://github.com/user-attachments/assets/9cd7394d-69bc-4f62-bc6e-be96771a0dc5" />
+
 
 
 ---
