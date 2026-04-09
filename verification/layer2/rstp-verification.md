@@ -45,4 +45,4 @@ Verifies port roles and states.
 
 ## Conclusion
 
-RSTP is functioning correctly with proper root placement and edge protection.
+RSTP is functioning correctly with proper root bridge election and edge protection.
