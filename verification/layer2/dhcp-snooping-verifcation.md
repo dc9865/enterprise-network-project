@@ -36,3 +36,9 @@ Verifies learned client bindings.
 
 <img width="649" height="73" alt="image" src="https://github.com/user-attachments/assets/9587a830-dd7b-4c05-8535-28e061debb57" />
 
+
+---
+
+## Conclusion
+
+DHCP snooping is functioning correctly.
