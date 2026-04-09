@@ -39,3 +39,10 @@ Verifies hostname resolution.
 Verifies resolution and reachability.
 
 <img width="434" height="190" alt="image" src="https://github.com/user-attachments/assets/461f55b6-a840-4f23-887b-1fbee7e9970b" />
+
+
+---
+
+## Conclusion
+
+DNS services are functioning correctly across the network.
