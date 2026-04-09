@@ -95,10 +95,8 @@ Verifies Layer 3 reachability.
 <img width="823" height="728" alt="image" src="https://github.com/user-attachments/assets/c34caa47-cc5d-4b54-9f90-0eeb9e8428f4" />
 
 
-
-
-
 ---
 
+## Conclusion
 
-
+Layer 3 addressing and connectivity are functioning correctly across the network.
