@@ -32,7 +32,7 @@ It demonstrates not only configuration skills, but also network design, validati
 - VTP (centralized VLAN management)
 - Rapid STP (RSTP)
 - Inter-VLAN routing (future phases)
-- First Hop Redundancy (HSRP – future)
+- First Hop Redundancy (HSRP)
 
 ---
 
